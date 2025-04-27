@@ -1,3 +1,98 @@
+:root {
+  --pastel-purple: #f5f1ff;
+  --medium-purple: #9370db;
+  --deep-purple: #6a4a8e;
+}
+
 .Dictionary {
-  margin-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.Dictionary h1 {
+  text-align: center;
+  color: var(--deep-purple);
+  margin-bottom: 2rem;
+}
+
+.Dictionary form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.Dictionary input {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  width: 400px;
+  border: 2px solid var(--medium-purple);
+  border-radius: 6px;
+}
+
+.Dictionary button[type="submit"] {
+  padding: 0.8rem 1.5rem;
+  background: var(--deep-purple);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Word-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--pastel-purple);
+}
+
+.Phonetic {
+  color: var(--medium-purple);
+  margin-left: 0.8rem;
+  font-weight: 400;
+}
+
+.SoundButton {
+  background: none;
+  border: none;
+  color: var(--medium-purple);
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.Meaning {
+  margin-bottom: 2rem;
+}
+
+.Meaning h3 {
+  color: var(--deep-purple);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.Definition {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.Example {
+  display: inline-block;
+  background-color: var(--pastel-purple);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  color: var(--deep-purple);
+  font-style: italic;
+}
+
+.Loading, .Error {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--deep-purple);
+}
+
+.Error {
+  color: #dc3545;
 }
